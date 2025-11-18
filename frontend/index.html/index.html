@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Language Translation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>🌐 Language Translation Tool</h2>
+
+    <div class="container">
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+        <div class="row">
+            <select id="sourceLang">
+                <option value="">Auto Detect</option>
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="mr">Marathi</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+
+            <select id="targetLang">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="mr">Marathi</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+
+        <button onclick="translateText()">Translate</button>
+
+        <h3>Translated Output:</h3>
+        <textarea id="outputText" readonly></textarea>
+
+        <button onclick="copyText()">Copy</button>
+        <button onclick="speak()">Speak</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
